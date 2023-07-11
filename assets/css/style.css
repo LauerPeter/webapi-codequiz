@@ -1,0 +1,29 @@
+* {
+  background-color: rgb(58, 104, 203);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  border: 20px;
+}
+
+h1 {
+  font-size: 5em;
+  color: whitesmoke;
+}
+
+.commence {
+  display: flex;
+  justify-content: center;
+}
+
+.start  {
+  background-color: rgb(69, 211, 104);
+  font-size: 2em;
+}
+
+.results {
+  background-color: rgb(202, 210, 66);
+  font-size: 2em;
+}
