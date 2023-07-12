@@ -25,5 +25,6 @@ var questions = [
     title:"5.Which JavaScript method is used to access an HTML element by id?",
     choice: ["getElementById()", "getElement(id)", "getElementById(id)", "elementById(id)"],
     answer: "getElementById()"
+    
   }
 ];
