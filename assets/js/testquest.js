@@ -2,28 +2,28 @@
 
 var questions = [
   {
-    title: "Which of the following is not javascript data types?",
+    title: "1.Which of the following is not javascript data types?",
     choices: ["Null type", "Undefined type", "Number type", "All of the mentioned"],
     answer: "Null type"
   },
   {
-    title: "",
-    choices: ["","","",""],
-    answer: ""
+    title: "2.JavaScript code can be written in ____.",
+    choices: ["JavaScript file (.js file)","HTML document directly","JavaScript file and in HTML document directly","In style sheets (.css file)"],
+    answer: "JavaScript file and in HTML document directly"
   },
   {
-    title: "",
-    choice: ["", "", "", ""],
-    answer: ""
+    title: "3.Which symbol is used separate JavaScript statements?",
+    choice: ["Comma (,)", "Colon (:)", "Colon (:)", "Semicolon (;)"],
+    answer: "Semicolon (;)"
   },
   {
-    title: "",
-    choice: ["", "", "", ""],
-    answer: ""
+    title: "4.JavaScript ignores?",
+    choice: ["newlines", "tabs", "spaces", "All of the above"],
+    answer: "All of the above"
   },
   {
-    title:"",
-    choice: ["", "", "", ""],
-    answer: ""
+    title:"5.Which JavaScript method is used to access an HTML element by id?",
+    choice: ["getElementById()", "getElement(id)", "getElementById(id)", "elementById(id)"],
+    answer: "getElementById()"
   }
 ];
