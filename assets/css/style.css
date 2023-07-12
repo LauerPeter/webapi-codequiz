@@ -4,6 +4,9 @@ body {
  background-color: wheat;
 }
 
+a {
+  color: #0f0f00;
+}
 
 .scores {
   position: absolute;
@@ -27,6 +30,12 @@ body {
   display: none;
 }
 
-
-
+.feedback {
+  font-style: italic;
+  font-size: 120%;
+  margin-top: 20px;
+  padding-top: 10px;
+  color: gray;
+  border-top: 2px solid rgb(201, 193, 193);
+}
 
