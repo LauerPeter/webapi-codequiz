@@ -1,0 +1,32 @@
+
+
+body {
+ background-color: wheat;
+}
+
+
+.scores {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+
+.timer {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.wrapper {
+  margin: 100px auto 0 auto;
+  max-width: 600px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
