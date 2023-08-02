@@ -24,6 +24,7 @@ a {
 .wrapper {
   margin: 100px auto 0 auto;
   max-width: 600px;
+  text-align: center;
 }
 
 .hide {

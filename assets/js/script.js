@@ -31,7 +31,7 @@ const questions = [
   },
   {
     title: "3.Which symbol is used separate JavaScript statements?",
-    choice: ["Comma (,)", "Colon (:)", "Colon (:)", "Semicolon (;)"],
+    choices: ["Comma (,)", "Colon (:)", "Colon (:)", "Semicolon (;)"],
     answer: "Semicolon (;)"
   },
   {
@@ -46,3 +46,33 @@ const questions = [
     
   }
 ];
+
+startButton.addEventListener("click", startQuiz);
+
+////hides the questions until quiz
+function startQuiz(){
+
+  const startScreen = document.getElementById("start-screen");
+  
+  startScreen.style.display = "none";
+  
+  const questionsSection = document.getElementById("questions");
+  
+  questionsSection.style.display = "block";
+  
+  quizStart = true;
+
+    
+  displayQuestion();
+  
+    
+  startTimer();
+}
+
+
+
+
+
+
+
+
