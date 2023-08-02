@@ -18,6 +18,8 @@ let score = 0;
 let quizStart = false;
 let quizEnd = false;
 
+
+///questions for the quiz
 const questions = [
   {
     title: "1.Which of the following is not javascript data types?",
@@ -36,12 +38,12 @@ const questions = [
   },
   {
     title: "4.JavaScript ignores?",
-    choice: ["newlines", "tabs", "spaces", "All of the above"],
+    choices: ["newlines", "tabs", "spaces", "All of the above"],
     answer: "All of the above"
   },
   {
     title:"5.Which JavaScript method is used to access an HTML element by id?",
-    choice: ["getElementById()", "getElement(id)", "getElementById(id)", "elementById(id)"],
+    choices: ["getElementById()", "getElement(id)", "getElementById(id)", "elementById(id)"],
     answer: "getElementById()"
     
   }
@@ -62,11 +64,69 @@ function startQuiz(){
   
   quizStart = true;
 
-    
   displayQuestion();
   
-    
   startTimer();
+
+}
+
+
+function displayQuestion(){
+  
+  const currentQuestionNum = questions[currentQuestion];
+
+  questionTitle.textContent = currentQuestionNum.title;
+
+  choicesContainer.innerHTML = '';
+
+  for (let i = 0; i < currentQuestionNum.choices.length; i++) {
+    
+    const choice = currentQuestionNum.choices[i];
+    
+    const choiceButton = document.createElement('button');
+    
+    choiceButton.textContent = choice;
+    
+    choiceButton.classList.add('choice'); 
+
+    choiceButton.addEventListener('click', function () {
+      checkAnswer(choice);
+    });
+    choicesContainer.appendChild(choiceButton);
+  }
+}
+
+function checkAnswer (userChoice) {
+  
+  const currentQuestionNum = questions[currentQuestion];
+
+  if (userChoice === currentQuestionNum.answer){
+
+    score += 10;
+
+    alert("Correct! 10 points!");
+
+    currentQuestion++ 
+  }
+  
+  else {
+
+    time -= 5;
+
+    alert("Incorrect! 5 seconds has been removed from the timer!");
+  
+  }
+
+  if (currentQuestion === questions.length)
+
+  endQuiz()
+
+
+  else {
+  displayQuestion();
+ 
+  }
+
 }
 
 
