@@ -16,6 +16,7 @@ a {
 
 #questions {
   text-align: center;
+  margin-top: 10px;
 }
 
 
@@ -44,3 +45,9 @@ a {
   border-top: 2px solid rgb(201, 193, 193);
 }
 
+#end-screen.hide {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  right: 25%;
+}

@@ -113,15 +113,13 @@ function startTimer() {
     }
   }, 1000); 
 }
-///
+///upadtes the html to display time
 function updateClockHtml() {
   displayTimer.textContent = time;
 }
 
 
  
-
-
 function checkAnswer (userChoice) {
   
   const currentQuestionNum = questions[currentQuestion];
@@ -155,7 +153,21 @@ function checkAnswer (userChoice) {
 
 }
 
+function endQuiz() {
+  
+  const questionStopDisplay = document.getElementById("questions");
 
+  questionStopDisplay.style.display = "none";
+
+  const endScreen = document.getElementById("end-screen")
+
+  endScreen.style.display = "block";
+
+  const finalScore = document.getElementById("final-score");
+  
+  finalScore.textContent = score;
+
+}
 
 
 
