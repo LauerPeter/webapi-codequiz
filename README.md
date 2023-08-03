@@ -2,13 +2,16 @@
 4th homework assignment 
 
 ## Description 
-This is a 5 question javascript quiz. The functionality of it does not work yet. Turning in what I understand now until a tutor can help me out. 
+This is a simple 5 question javascript quiz. When you start quiz, 100 seconds will begin to count down. If you answer a question inncorrectly then 5 points and 5 seconds will be subtracted; otherwise, 10 points will be granted. The top score is 50 points. 
+
+Functionality is now up to date and is working properly.
 
 ## Installation
 
-N/A
+There are no installation requirements for this app.
 
 ## Usage 
+
 N/A
 
 ## Credits
@@ -25,7 +28,7 @@ N/A
 
 ## Features
 
-N/A
+Timer, local storage, high-scores.
 
 ## How to Contribute
 N/A
@@ -34,4 +37,4 @@ N/A
 
 
 ## screenshot
-![Coding Quiz--Web Api HW - Google Chrome 7_12_2023 6_01_49 PM](https://github.com/LauerPeter/webapi-codequiz/assets/135652706/f193a6c8-d08d-45f2-af8f-75a8dc72d3d6)
+
