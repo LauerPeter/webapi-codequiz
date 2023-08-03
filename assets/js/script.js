@@ -51,7 +51,7 @@ const questions = [
 
 startButton.addEventListener("click", startQuiz);
 
-////hides the questions until quiz
+////hides the questions until quiz starts
 function startQuiz(){
 
   const startScreen = document.getElementById("start-screen");
@@ -70,7 +70,7 @@ function startQuiz(){
 
 }
 
-
+////questions appear when startquiz is activated 
 function displayQuestion(){
   
   const currentQuestionNum = questions[currentQuestion];
@@ -95,6 +95,32 @@ function displayQuestion(){
     choicesContainer.appendChild(choiceButton);
   }
 }
+
+///timer functionality
+function startTimer() {
+  
+  const clock = setInterval(function () {
+    
+    time -= 1; 
+    
+    updateClockHtml(); 
+
+    if (time <= 0 || quizEnd) {
+      
+      clearInterval(clock); 
+      
+      endQuiz(); 
+    }
+  }, 1000); 
+}
+///
+function updateClockHtml() {
+  displayTimer.textContent = time;
+}
+
+
+ 
+
 
 function checkAnswer (userChoice) {
   
