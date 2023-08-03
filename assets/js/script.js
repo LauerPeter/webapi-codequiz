@@ -6,8 +6,12 @@ const questionTitle = document.getElementById("question-title");
 const choicesContainer = document.getElementById("choices");
 const feedbackElement = document.getElementById("feedback");
 const endScreen = document.getElementById("end-screen");
+const initialsForm = document.getElementById("initials-form");
 const initialsInput = document.getElementById("initials");
 const submitButton = document.getElementById("submit");
+const viewHighScoreButton = document.getElementById("high-scores-button");
+const highScoresList = document.getElementById("high-scores-list");
+const finalScore = document.getElementById("final-score");
 
 ///quiz let logic 
 
@@ -137,6 +141,8 @@ function checkAnswer (userChoice) {
 
     time -= 5;
 
+    score -= 5
+
     alert("Incorrect! 5 seconds has been removed from the timer!");
   
   }
@@ -156,11 +162,11 @@ function checkAnswer (userChoice) {
 function endQuiz() {
   
   const questionStopDisplay = document.getElementById("questions");
-
+  
   questionStopDisplay.style.display = "none";
 
-  const endScreen = document.getElementById("end-screen")
-
+  const endScreen = document.getElementById("end-screen");
+  
   endScreen.style.display = "block";
 
   const finalScore = document.getElementById("final-score");
@@ -170,7 +176,66 @@ function endQuiz() {
 }
 
 
+viewHighScoreButton.addEventListener("click", function () {
+  
+  displayHighScores();
+
+});
+
+
+function displayHighScores() {
+  
+  highScoresList.innerHTML = "";
+  
+  highScoresList.style.display = "block";
+
+  const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+
+  highScores.forEach((scoreObj, index) => {
+    
+    const listItem = document.createElement("li");
+    
+    listItem.textContent = `${index + 1}. ${scoreObj.initials} - ${scoreObj.score}`;
+    
+    highScoresList.appendChild(listItem);
+  
+  });
+}
 
 
 
+endScreen.addEventListener("submit", function (event) {
+ 
+  event.preventDefault();
+  
+  const initials = initialsInput.value.trim().toUpperCase();
+  
+  const score = parseInt(finalScore.textContent);
 
+  if (initials !== "" && !isNaN(score)) {
+    
+    saveScore(initials, score);
+    
+    alert("High-Score has been saved! Click 'Home Page' if you would like to try the quiz again")
+  
+  }
+
+});
+
+function saveScore(initials, score) {
+  
+  const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
+  
+  highScores.push({ initials, score });
+  
+  localStorage.setItem("highScores", JSON.stringify(highScores));
+
+  console.log(initials, score)
+
+}
+
+const sendBackButton = document.getElementById("send-back");
+
+sendBackButton.addEventListener("click", function () {
+  window.location.href = "index.html"; 
+});

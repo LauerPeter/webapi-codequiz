@@ -1,11 +1,15 @@
 
 
 body {
- background-color: wheat;
+ background-color: white;
 }
 
 a {
   color: #0f0f00;
+}
+
+h1{
+  text-decoration: underline;
 }
 
 .scores {
@@ -36,18 +40,23 @@ a {
   display: none;
 }
 
-.feedback {
-  font-style: italic;
-  font-size: 120%;
-  margin-top: 20px;
-  padding-top: 10px;
-  color: gray;
-  border-top: 2px solid rgb(201, 193, 193);
-}
-
 #end-screen.hide {
   position: absolute;
   top: 5%;
   left: 25%;
   right: 25%;
+}
+
+#high-scores-list {
+  display: none;
+}
+
+#high-scores-list.hide {
+  margin-top: 40px
+}
+
+button{
+  color: black;
+  background-color: whitesmoke;
+
 }
