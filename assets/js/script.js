@@ -74,7 +74,7 @@ function startQuiz(){
 
 }
 
-////questions appear when startquiz is activated 
+////questions appear when startquiz button is activated 
 function displayQuestion(){
   
   const currentQuestionNum = questions[currentQuestion];
@@ -123,7 +123,7 @@ function updateClockHtml() {
 }
 
 
- 
+///Scoring functionality when a user answers a question
 function checkAnswer (userChoice) {
   
   const currentQuestionNum = questions[currentQuestion];

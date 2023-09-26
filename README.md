@@ -1,15 +1,23 @@
 # webapi-codequiz
-4th homework assignment 
+
+Welcome to the WebAPI Code Quiz! This is a fun and simple quiz designed to test your knowledge of JavaScript. 
 
 ## Description 
-This is a 5 question javascript quiz. The functionality of it does not work yet. Turning in what I understand now until a tutor can help me out. 
+
+Upon clicking the "Start Quiz" button, a 100 second timer will begin to count down and you will have to swiftly answer 5 JavaScript coding questions. If a question is answered incorrctly, 5 seconds will be subtracted from the timer as well as 5 points from your final score. If a question is answered correctly you will recieve 10 points. At the end of the quiz you can enter your initials and save your scores for future reference. 
+
+## Features
+
+Timer, Local Storage, and High Scores - using JavaScript
+
+## Usage 
+
+I created this app to boost my skills with interface functionality using JavaScript; hence, the basic layout.
 
 ## Installation
 
-N/A
-
-## Usage 
-N/A
+No installation is required to enjoy this quiz
+ 
 
 ## Credits
 
@@ -17,21 +25,12 @@ N/A
 
 ## License
 
-MIT license - refer to LICENSE in repo
+MIT license 
 
-## Badges
-
-N/A
-
-## Features
-
-N/A
-
-## How to Contribute
-N/A
 
 ## links
 
+https://lauerpeter.github.io/webapi-codequiz/
 
 ## screenshot
 ![Coding Quiz--Web Api HW - Google Chrome 7_12_2023 6_01_49 PM](https://github.com/LauerPeter/webapi-codequiz/assets/135652706/f193a6c8-d08d-45f2-af8f-75a8dc72d3d6)
