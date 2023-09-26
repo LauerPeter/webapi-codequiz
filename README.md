@@ -33,4 +33,5 @@ MIT license
 https://lauerpeter.github.io/webapi-codequiz/
 
 ## screenshot
-![Coding Quiz--Web Api HW - Google Chrome 7_12_2023 6_01_49 PM](https://github.com/LauerPeter/webapi-codequiz/assets/135652706/f193a6c8-d08d-45f2-af8f-75a8dc72d3d6)
+![Coding Quiz--Web Api HW - Google Chrome 8_2_2023 9_07_00 PM](https://github.com/LauerPeter/webapi-codequiz/assets/135652706/d6349131-73e5-48aa-9833-66d4b122d392)
+
