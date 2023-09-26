@@ -19,10 +19,6 @@ I created this app to boost my skills with interface functionality using JavaScr
 No installation is required to enjoy this quiz
  
 
-## Credits
-
-N/A
-
 ## License
 
 MIT license 
