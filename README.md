@@ -8,7 +8,9 @@ Upon clicking the "Start Quiz" button, a 100 second timer will begin to count do
 
 ## Features
 
-Timer, Local Storage, and High Scores - using JavaScript
+- Timer
+-  Local Storage
+-  High Scores 
 
 ## Usage 
 
@@ -16,7 +18,9 @@ I created this app to boost my skills with interface functionality using JavaScr
 
 ## Technologies
 
-HTML, CSS, JavaScript
+- HTML
+- CSS
+- JavaScript
 
 ## Installation
 
@@ -24,12 +28,12 @@ No installations are required to use this quiz.
 
 ## License
 
-MIT license 
+- MIT license 
 
 
 ## links
 
-https://lauerpeter.github.io/webapi-codequiz/
+- https://lauerpeter.github.io/webapi-codequiz/
 
 ## screenshot
 ![Coding Quiz--Web Api HW - Google Chrome 8_2_2023 9_07_00 PM](https://github.com/LauerPeter/webapi-codequiz/assets/135652706/d6349131-73e5-48aa-9833-66d4b122d392)
