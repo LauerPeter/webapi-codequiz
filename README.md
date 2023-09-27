@@ -14,10 +14,13 @@ Timer, Local Storage, and High Scores - using JavaScript
 
 I created this app to boost my skills with interface functionality using JavaScript; hence, the basic layout.
 
+## Technologies
+
+HTML, CSS, JavaScript
+
 ## Installation
 
-No installation is required to enjoy this quiz
- 
+No installations are required to use this quiz.
 
 ## License
 
